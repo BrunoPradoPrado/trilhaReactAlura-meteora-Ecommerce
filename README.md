@@ -1,6 +1,6 @@
 # 🛍️ Meteora — E-commerce em React com Context API
 
-![Meteora Banner](./public/assets/images/banner.png)
+![Meteora Banner](./public/assets/images/banner1-desktop.png)
 
 ## 📖 Sobre o projeto
 
