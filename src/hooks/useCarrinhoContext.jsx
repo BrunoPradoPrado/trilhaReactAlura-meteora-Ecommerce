@@ -11,12 +11,17 @@ export const useCarrinhoContext = () => {
         setValorTotal 
     } = useContext(CarrinhoContext);
 
-    function mudarQuantidade (id, quantidade) {
-        return carrinho.map( (itemDoCarrinho) => {
-            if(itemDoCarrinho.id === id ) itemDoCarrinho.quantidade += quantidade
-            return itemDoCarrinho
-        })
+    function mudarQuantidade(id, quantidade) {
+        return carrinho.map(itemDoCarrinho =>
+            itemDoCarrinho.id === id
+            ? {
+                ...itemDoCarrinho,
+                quantidade: itemDoCarrinho.quantidade + quantidade,
+                }
+            : itemDoCarrinho
+        )
     }
+
 
     function adicionarProduto(novoProduto) {
         const temOProduto = carrinho.some((itemDoCarrinho) => 
@@ -56,16 +61,21 @@ export const useCarrinhoContext = () => {
     }
 
     useEffect(() => {
-        const { totalTemp, quantidadeTemp } = carrinho.reduce( 
+        console.log("ITEM NO CARRINHO:", carrinho)
+
+        const { totalTemp, quantidadeTemp } = carrinho.reduce(
             (acumulador, produto) => ({
-                quantidadeTemp: acumulador.quantidadeTemp + produto.quantidade,
-                totalTemp     : acumulador.totalTemp      + produto.preco*produto.quantidade,
-            }), 
+            quantidadeTemp: acumulador.quantidadeTemp + produto.quantidade,
+            totalTemp:
+                acumulador.totalTemp +
+                Number(produto.preco) * produto.quantidade,
+            }),
             {
-                quantidadeTemp: 0,
-                totalTemp     : 0,
-            } 
-        )   
+            quantidadeTemp: 0,
+            totalTemp: 0,
+            }
+        )
+
         setQuantidade(quantidadeTemp)
         setValorTotal(totalTemp)
     }, [carrinho])

@@ -11,8 +11,8 @@ const Carrinho = () => {
     adicionarProduto,
     removerProduto,
     removerProdutoCarrinho,
-    valorTotalCarrinho,
-    quantidadeProdutos
+    valorTotal,
+    quantidade,
   } = useCarrinhoContext()
 
   return (
@@ -37,8 +37,8 @@ const Carrinho = () => {
               />
             </div>
             <Sumario
-              valorTotalCarrinho={valorTotalCarrinho}
-              quantidadeProdutos={quantidadeProdutos}
+              valorTotal={valorTotal}
+              quantidade={quantidade}
             />
           </div>
         </section>
