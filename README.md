@@ -1,75 +1,86 @@
-# 🛍️ Meteora — E-commerce em React com Context API
 
-![Meteora Banner](./public/assets/images/banner1-desktop.png)
+# 👗 Meteora — E-commerce em React
 
-## 📖 Sobre o projeto
+🛒 Aplicação de e-commerce desenvolvida em React, com foco em gerenciamento de estado global, boas práticas e performance, utilizando Context API + useReducer.
 
-O **Meteora** é uma aplicação de e-commerce desenvolvida em **React**, criada ao longo do curso **React: gerencie estados globalmente com Context API** da **Alura**.
-
-O projeto simula uma loja virtual de moda, com foco em **arquitetura de estado global**, **boas práticas de React**, **performance** e **eliminação de prop drilling**, evoluindo de um estado local para uma solução robusta com **Context API + useReducer**.
+👉 Deploy: https://link-x.vercel.app  
+👉 Curso base: React: gerencie estados globalmente com Context API — Alura
 
 ---
 
-## ✨ Funcionalidades
+## ✨ Demonstração
 
-- 🛒 Carrinho de compras global
-- ➕ Adicionar produtos ao carrinho
-- ➖ Aumentar e diminuir quantidade de produtos
-- 🗑️ Remover produto do carrinho
-- 📊 Cálculo automático de:
-  - quantidade total de produtos
-  - valor total da compra
-- 🧠 Gerenciamento de estado global com **Context API**
-- ⚙️ Lógica de estado centralizada com **useReducer**
-- ⚡ Otimização de performance com **useMemo**
-- 🧩 Hook customizado para consumo do contexto
-- 🎨 Interface responsiva baseada no layout do curso
+🔗 Acesse o projeto online:  
+https://link-x.vercel.app
+
+Projeto responsivo, seguindo o layout proposto no curso, com foco em arquitetura e clareza de código.
 
 ---
 
-## 🧠 Principais conceitos aplicados
+## 📌 Sobre o projeto
 
-- **Context API**
-  - Criação de contexto global
-  - Uso do `Provider` para compartilhar estado
-  - Consumo via `useContext`
+O Meteora simula uma loja virtual de moda e foi construído com o objetivo de evoluir o gerenciamento de estado em React, partindo de estados locais até uma solução escalável, previsível e performática, eliminando prop drilling e centralizando regras de negócio.
 
-- **useReducer**
-  - Centralização da lógica de estado
-  - Actions e reducer bem definidos
-  - Evita lógica espalhada em múltiplos componentes
+---
 
-- **useMemo**
-  - Otimização de cálculos derivados (valor total e quantidade)
-  - Evita renderizações e cálculos desnecessários
+## 🧠 Conceitos e padrões aplicados
 
-- **Boas práticas**
-  - Imutabilidade do estado
-  - Separação de responsabilidades
-  - Eliminação de *prop drilling*
-  - Código mais previsível e escalável
+### Context API
+- Criação de estado global compartilhado
+- Uso de Provider e useContext
+- Eliminação de prop drilling
+
+### useReducer
+- Centralização da lógica de estado
+- Actions bem definidas
+- Código mais previsível e fácil de manter
+
+### useMemo
+- Otimização de valores derivados:
+  - Quantidade total de itens no carrinho
+  - Valor total da compra
+- Evita cálculos e renderizações desnecessárias
+
+### Boas práticas
+- Imutabilidade do estado
+- Separação de responsabilidades
+- Hook customizado para consumo do contexto
+- Código limpo e escalável
+
+---
+
+## 🛒 Funcionalidades
+
+- Adicionar produtos ao carrinho
+- Aumentar quantidade de produtos
+- Diminuir quantidade de produtos
+- Remover produtos do carrinho
+- Cálculo automático de:
+  - Quantidade total de produtos
+  - Valor total da compra
+- Gerenciamento de estado global
 
 ---
 
 ## 🛠️ Tecnologias utilizadas
 
-- **React**
-- **JavaScript (ES6+)**
-- **Context API**
-- **React Hooks**
-  - `useContext`
-  - `useReducer`
-  - `useMemo`
-  - `useEffect`
-- **Vite**
-- **HTML5 & CSS3**
-- **Git & GitHub**
+- React
+- JavaScript (ES6+)
+- Context API
+- React Hooks
+  - useContext
+  - useReducer
+  - useMemo
+  - useEffect
+- Vite
+- HTML5 & CSS3
+- Git & GitHub
+- Deploy com Vercel
 
 ---
 
 ## 📂 Estrutura do projeto
 
-```txt
 src/
  ├─ components/
  │  ├─ BarraNavegacao
@@ -97,3 +108,21 @@ src/
  │
  └─ utils/
     └─ formatadorMoeda.js
+
+---
+
+## 🚀 Aprendizados
+
+- Organização de estado global em React
+- Uso prático de Context API com useReducer
+- Otimização de performance com memoização
+- Estruturação de código para projetos escaláveis
+
+---
+
+## 👨‍💻 Autor
+
+Bruno do Prado  
+Estudante de Front-end | React  
+
+GitHub: https://github.com/BrunoPradoPrado
