@@ -3,7 +3,7 @@
 
 🛒 Aplicação de e-commerce desenvolvida em React, com foco em gerenciamento de estado global, boas práticas e performance, utilizando Context API + useReducer.
 
-👉 Deploy: https://link-x.vercel.app  
+👉 Deploy: https://https://trilha-react-alura-meteora-ecommerc.vercel.app/
 👉 Curso base: React: gerencie estados globalmente com Context API — Alura
 
 ---
@@ -11,7 +11,7 @@
 ## ✨ Demonstração
 
 🔗 Acesse o projeto online:  
-https://link-x.vercel.app
+https://https://trilha-react-alura-meteora-ecommerc.vercel.app/
 
 Projeto responsivo, seguindo o layout proposto no curso, com foco em arquitetura e clareza de código.
 
@@ -80,7 +80,7 @@ O Meteora simula uma loja virtual de moda e foi construído com o objetivo de ev
 ---
 
 ## 📂 Estrutura do projeto
-
+```bash
 src/
  ├─ components/
  │  ├─ BarraNavegacao
@@ -108,7 +108,7 @@ src/
  │
  └─ utils/
     └─ formatadorMoeda.js
-
+```
 ---
 
 ## 🚀 Aprendizados
